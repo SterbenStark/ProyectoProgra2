@@ -1,5 +1,0 @@
-Repositorio Git
-https://github.com/SterbenStark/Practica2Progra
-
-publicación Heroku
-https://practica2progra.herokuapp.com/

@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>TAREA - 2 - SterbenStark</title>
+<title>Proyecto2 - SterbenStark</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/normalize.css">
@@ -44,9 +44,9 @@ body {
   
 <div class="topnav">
   <a href="/">Home</a> 
-  <a href="/book">Books</a>
-  <a href="/author">Authors</a>
-  <a href="/publisher">Publishers</a> 
+  <a href="/book">Documents</a>
+  <a href="/author">Workflows</a>
+  <a href="/publisher">Task</a> 
 </div> 
 <?php
 error_reporting(E_ALL);
