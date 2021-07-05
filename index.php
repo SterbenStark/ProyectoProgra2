@@ -44,9 +44,9 @@ body {
   
 <div class="topnav">
   <a href="/">Home</a> 
-  <a href="/book">Documents</a>
-  <a href="/author">Workflows</a>
-  <a href="/publisher">Task</a> 
+  <a href="/book">Documentoss</a>
+  <a href="/author">Flujos de Trabajo</a>
+  <a href="/publisher">Tareas</a> 
 </div> 
 <?php
 error_reporting(E_ALL);

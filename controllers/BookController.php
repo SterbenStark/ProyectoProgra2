@@ -8,14 +8,14 @@
     public function index() {  
       return view('books/index',
        ['books'=>Book::all(),
-        'title'=>'Documents']);
+        'title'=>'Documentos']);
     }
 
     public function show($id) {
       $book = Book::find($id);
       return view('books/show',
         ['books'=>$book,
-         'title'=>'Documents Detail']);
+         'title'=>'Documentos Detalle']);
     }
     
     /*public function update($id){
