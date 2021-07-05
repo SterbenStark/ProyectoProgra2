@@ -9,7 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/skeleton.css">
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.x"></script>
 
 </head>
 
@@ -60,34 +59,5 @@
     </div>
   </div>
 
-  <div id="app">  
-    <book-item  
-      v-for="book in books"  
-      v-bind:key="book.id"  
-      v-bind:book="book"  
-    ></book-item>      
-  </div>
-
-  <template id="tmpl">
-     <div class="book-post">
-       <h3>{{ book.title }}</h3>
-       <p>Price: {{ book.price }}</p>
-     </div>
-  </template>
-
-  <script>
-    Vue.component('book-item', {  
-      props: ['book'],  
-      template: '#tmpl'})
-    var app = new Vue({  
-      el: '#app',  
-      data: {  
-        books: [  
-          { id: 1, title: 'Programming Vue', price: 56 },  
-          { id: 2, title: 'Vue.js Framework', price: 45 },  
-          { id: 3, title: 'Vue for dummies', price: 34}  
-      ]}  
-    })  
-  </script> 
   
 </body>
