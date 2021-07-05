@@ -10,7 +10,7 @@ class Book extends Model {
 
     ['id'=>2,'title'=>'Politicas de COVID-19','copyright'=>'2020',
      'language'=>'Ingles/Español','pages'=>'8','author'=>'Jiandro Sibaja Granados','author_id'=>'3',
-     'publisher'=>'John Walker','publisher_id'=>'1',], 
+     'publisher'=>'John Walker','publisher_id'=>'4',], 
 
      ['id'=>3,'title'=>'Boletines Informativos','copyright'=>'2015',
       'language'=>'Ingles/Español','pages'=>'80','author'=>'Cristina Vasquez Granados','author_id'=>'2',
