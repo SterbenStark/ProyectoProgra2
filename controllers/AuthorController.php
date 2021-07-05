@@ -7,7 +7,7 @@
     public function index() {  
       return view('authors/index',
        ['author'=>Author::all(),
-        'title'=>'Lista Autores']);
+        'title'=>'Autores Flujos']);
     }
 
     public function show($id) {

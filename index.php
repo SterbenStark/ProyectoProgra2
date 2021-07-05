@@ -46,7 +46,7 @@ body {
   <a href="/">Home</a> 
   <a href="/book">Documentos</a>
   <a href="/author">Flujos de Trabajo</a>
-  <a href="/publisher">Tareas</a> 
+  <a href="/publisher">Publicadores</a> 
 </div> 
 <?php
 error_reporting(E_ALL);
