@@ -15,17 +15,6 @@
 
 <body>
 
-  <div id="app">
-    <book-item v-for="book in books" v-bind:key="book.id" v-bind:book="book"></book-item>
-  </div>
-
-  <template id="tmpl">
-    <div class="book-post">
-      <h3>{{ book.title }}</h3>
-      <p>Price: {{ book.price }}</p>
-    </div>
-  </template>
-
   <div class="container">
     <div class="row">
       <div class="eleven column" style="margin-top: 10%">
@@ -70,6 +59,17 @@
       </div>
     </div>
   </div>
+
+  <div id="app">
+    <book-item v-for="book in books" v-bind:key="book.id" v-bind:book="book"></book-item>
+  </div>
+
+  <template id="tmpl">
+    <div class="book-post">
+      <h3>{{book.title}}</h3>
+      <p>Price: {{ book.price }}</p>
+    </div>
+  </template>
 
   <script>
     Vue.component('book-item', {
