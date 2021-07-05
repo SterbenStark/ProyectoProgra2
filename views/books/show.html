@@ -1,50 +1,91 @@
-
 <!DOCTYPE html>
 <!-- file: views/professor/index.php -->
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>{{title}}</title>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/css/normalize.css">
-<link rel="stylesheet" href="/css/skeleton.css">
- 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x"></script>
+
 </head>
-<body>
- 
- <div class="container">
-  <div class="row">
-   <div class="eleven column" style="margin-top: 10%">
-     <h2>{{title}}  </h2>
-     <table><thead>
-      <tr><th>Id</th><th>Name</th><th>Edition</th>
-          <th>Copyright</th><th>Language</th>
-          <th>Pages</th>
-          <th>Author</th>
-          <th>ID Autor</th>
-          <th>Publisher</th>
-          <th>Publisher_id</th></tr>
-      </thead><tbody>
-        {{#books}}  
-      <tr> <td>{{id}} </td>
-          
-      <td>
-        {{title}}   </td>
-      <td>{{edition}} </td>
-      <td>{{copyright}} </td>
-      <td>{{language}} </td>
-      <td>{{pages}} </td>
 
-      <td><a href="../author/{{author_id}}">
-        {{author}}  </a></td> 
-      <td> {{author_id}} </td> 
-      <td><a href="../publisher/{{publisher_id}}">
-        {{publisher}} </a></td>
-      <td>{{publisher_id}} </td> </tr>
-      {{/books}}  </tbody>
-     </table>
+<body>
+
+  <div id="app">
+    <book-item v-for="book in books" v-bind:key="book.id" v-bind:book="book"></book-item>
+  </div>
+
+  <template id="tmpl">
+    <div class="book-post">
+      <h3>{{ book.title }}</h3>
+      <p>Price: {{ book.price }}</p>
     </div>
-   </div>
- </div>
+  </template>
+
+  <div class="container">
+    <div class="row">
+      <div class="eleven column" style="margin-top: 10%">
+        <h2>{{title}} </h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Edition</th>
+              <th>Copyright</th>
+              <th>Language</th>
+              <th>Pages</th>
+              <th>Author</th>
+              <th>ID Autor</th>
+              <th>Publisher</th>
+              <th>Publisher_id</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#books}}
+            <tr>
+              <td>{{id}} </td>
+
+              <td>
+                {{title}} </td>
+              <td>{{edition}} </td>
+              <td>{{copyright}} </td>
+              <td>{{language}} </td>
+              <td>{{pages}} </td>
+
+              <td><a href="../author/{{author_id}}">
+                  {{author}} </a></td>
+              <td> {{author_id}} </td>
+              <td><a href="../publisher/{{publisher_id}}">
+                  {{publisher}} </a></td>
+              <td>{{publisher_id}} </td>
+            </tr>
+            {{/books}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    Vue.component('book-item', {
+      props: ['book'],
+      template: '#tmpl'
+    })
+    var app = new Vue({
+      el: '#app',
+      data: {
+        books: [
+          { id: 1, title: 'Programming Vue', price: 56 },
+          { id: 2, title: 'Vue.js Framework', price: 45 },
+          { id: 3, title: 'Vue for dummies', price: 34 }
+        ]
+      }
+    })
+  </script>
+
 </body>

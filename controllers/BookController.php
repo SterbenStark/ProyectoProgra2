@@ -16,6 +16,10 @@
       return view('books/show',
         ['books'=>$book,
          'title'=>'Documents Detail']);
-    } 
+    }
+    
+    public function update($id){
+      return BookController::update($id,$request);
+    }
   }
 ?>
