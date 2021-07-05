@@ -13,7 +13,11 @@ class Publisher extends Model {
     'books__title'=>'Boletines Informativos', ], 
 
     ['id'=>3,'publisher'=>'Jack el Destripador','country'=>'Reino Unido',
-    'founded'=>'1888','status'=>'Activo','books__book_id'=>'2',
+    'founded'=>'1888','status'=>'Activo','books__book_id'=>'4',
+    'books__title'=>'Normativa Interna', ], 
+
+    ['id'=>4,'publisher'=>'John Walker','country'=>'Estados Unidos',
+    'founded'=>'1980','status'=>'Activo','books__book_id'=>'2',
     'books__title'=>'Politicas de COVID-19', ], 
   ];
 
