@@ -14,6 +14,10 @@
   <div class="row">
    <div class="eleven column" style="margin-top: 10%">
     <h2><?php echo $title ?></h2>
+    <div class="btn-group" role="group" aria-label="Basic example">
+          <a href="#"><button type="button" class="btn btn-secondary btn-sm">Edit</button></a>
+          <a href="#"><button type="button" class="btn btn-secondary btn-sm">Delete</button></a>
+        </div>
     <form>
      <div class="row">
       <div class="six columns">
