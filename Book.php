@@ -9,7 +9,7 @@ class Book extends Model {
     'publisher'=>'John Walker','publisher_id'=>'1',],
 
     ['id'=>2,'title'=>'Politicas de COVID-19','copyright'=>'2020',
-     'language'=>'Ingles/Español','pages'=>'8','author'=>'Jiandro Sibaja Granados','author_id'=>'1',
+     'language'=>'Ingles/Español','pages'=>'8','author'=>'Jiandro Sibaja Granados','author_id'=>'3',
      'publisher'=>'John Walker','publisher_id'=>'1',], 
 
      ['id'=>3,'title'=>'Boletines Informativos','copyright'=>'2015',
@@ -17,7 +17,7 @@ class Book extends Model {
       'publisher'=>'Shiva','publisher_id'=>'2',],  
 
       ['id'=>4,'title'=>'Normativa Interna','copyright'=>'2010',
-       'language'=>'Español','pages'=>'90','author'=>'Milton Gómez Pérez','author_id'=>'2',
+       'language'=>'Español','pages'=>'90','author'=>'Milton Gómez Pérez','author_id'=>'1',
        'publisher'=>'Jack el Destripador','publisher_id'=>'3',],  
   ];
 

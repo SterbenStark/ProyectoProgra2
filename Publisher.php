@@ -16,7 +16,7 @@ class Publisher extends Model {
     'founded'=>'1888','status'=>'Activo','books__book_id'=>'4',
     'books__title'=>'Normativa Interna', ], 
 
-    ['id'=>4,'publisher'=>'John Walker','country'=>'Estados Unidos',
+    ['id'=>1,'publisher'=>'John Walker','country'=>'Estados Unidos',
     'founded'=>'1980','status'=>'Activo','books__book_id'=>'2',
     'books__title'=>'Politicas de COVID-19', ], 
   ];
