@@ -7,14 +7,14 @@
     public function index() {  
       return view('authors/index',
        ['author'=>Author::all(),
-        'title'=>'authors List']);
+        'title'=>'Lista Autores']);
     }
 
     public function show($id) {
       $aut = Author::find($id);
       return view('authors/show',
         ['author'=>$aut,
-         'title'=>'authors Detail']);
+         'title'=>'Detalles Autor']);
     }
   }
 ?>

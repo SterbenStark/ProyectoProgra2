@@ -4,13 +4,17 @@
 class Author extends Model {
 
   static $author = [
-    ['id'=>1,'author'=>'Abraham Silberschatz','nationality'=>'Israelis / American',
-     'birth_year'=>'1952','fields'=>'Database Systems, Operating Systems',
-     'books__book_id'=>'1','books__title'=>'Operating System Concepts'], 
+    ['id'=>1,'author'=>'Milton Gómez Pérez','nationality'=>'Costarricense',
+     'birth_year'=>'1995','fields'=>'Ingenieria en Sistemas, Bases de Datos, Tecnologías Low Code',
+     'books__book_id'=>'1','books__title'=>'Reglamentos'], 
     
-     ['id'=>2,'author'=>'Andrew S. Tanenbaum','nationality'=>'Dutch / American',
-     'birth_year'=>'1944','fields'=>'Distributed computing, Operating Systems',
-     'books__book_id'=>'3','books__title'=>'Computer Networks'], 
+     ['id'=>2,'author'=>'Cristina Vasquez Granados','nationality'=>'Costarricense',
+     'birth_year'=>'1994','fields'=>'Administración de Empresas, Recursos Humanos, Comercio Internacional',
+     'books__book_id'=>'3','books__title'=>'Boletines Informativos'],
+     
+     ['id'=>3,'author'=>'Jiandro Sibaja Granados','nationality'=>'Canadiense',
+     'birth_year'=>'1997','fields'=>'Ingenieria en Sistemas, Administración de Recursos',
+     'books__book_id'=>'2','books__title'=>'Politicas de COVID-19'],
   ];
 
   public static function all() { 
