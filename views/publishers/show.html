@@ -1,49 +1,55 @@
-
 <!DOCTYPE html>
 <!-- file: views/professor/index.php -->
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>{{title}}</title>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/css/normalize.css">
-<link rel="stylesheet" href="/css/skeleton.css">
- 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+
 </head>
-<body>
- 
- <div class="container">
-  <div class="row">
-   <div class="eleven column" style="margin-top: 10%">
-     <h2>{{title}}</h2>
-     <div class="btn-group" role="group" aria-label="Basic example">
-      <a href="#"><button type="button" class="btn btn-secondary btn-sm">Edit</button></a>
-      <a href="#"><button type="button" class="btn btn-secondary btn-sm">Delete</button></a>
-    </div>
-     <table><thead>
-      <tr><th>id</th>
-          <th>publisher</th>
-          <th>country</th>
-          <th>founded</th>
-          <th>genere</th>
-          <th>books__book_id</th>
-          <th>books__title</th> 
-      </thead><tbody>
-        {{#publisher}} 
-      <tr><td>{{id}}  </td>
-      <td>{{publisher}} </td>
-      <td>{{country}} </td>
-      <td>{{founded}} </td>
-      <td>{{genere}} </td>
 
-      <td>{{books__book_id}} </td>
-      <td><a href="../book/{{books__book_id}}">
-        {{books__title}}  </a></td>
-     </tr>
-     {{/publisher}} </tbody>
-     </table>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="eleven column" style="margin-top: 10%">
+        <h2>{{title}}</h2>
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <a href="#"><button type="button" class="btn btn-secondary btn-sm">Edit</button></a>
+          <a href="#"><button type="button" class="btn btn-secondary btn-sm">Delete</button></a>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Publicador</th>
+              <th>País</th>
+              <th>Fundado</th>
+              <th>Estado</th>
+              <th>ID Documento</th>
+              <th>Nombre Documento</th>
+          </thead>
+          <tbody>
+            {{#publisher}}
+            <tr>
+              <td>{{id}} </td>
+              <td>{{publisher}} </td>
+              <td>{{country}} </td>
+              <td>{{founded}} </td>
+              <td>{{status}} </td>
+
+              <td>{{books__book_id}} </td>
+              <td><a href="../book/{{books__book_id}}">
+                  {{books__title}} </a></td>
+            </tr>
+            {{/publisher}}
+          </tbody>
+        </table>
+      </div>
     </div>
-   </div>
- </div>
+  </div>
 </body>

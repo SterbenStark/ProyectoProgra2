@@ -8,14 +8,14 @@
     public function index() {  
       return view('publishers/index',
        ['publisher'=>Publisher::all(),
-        'title'=>'publishers List']);
+        'title'=>'Lista Publicadores']);
     }
 
     public function show($id) {
       $publ = Publisher::find($id);
       return view('publishers/show',
         ['publisher'=>$publ,
-         'title'=>'publishers Detail']);
+         'title'=>'Detalles Publicadores']);
     }
   }
 ?>
