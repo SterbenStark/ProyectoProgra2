@@ -18,8 +18,8 @@
          'title'=>'Documents Detail']);
     }
     
-    public function update($id){
+    /*public function update($id){
       return BookController::update($id,$request);
-    }
+    }*/
   }
 ?>
