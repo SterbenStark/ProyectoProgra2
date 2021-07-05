@@ -44,7 +44,7 @@ body {
   
 <div class="topnav">
   <a href="/">Home</a> 
-  <a href="/book">Documentoss</a>
+  <a href="/book">Documentos</a>
   <a href="/author">Flujos de Trabajo</a>
   <a href="/publisher">Tareas</a> 
 </div> 
